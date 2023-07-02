@@ -1,5 +1,6 @@
 # **Sobre o Projeto**
-Esse projeto foi desenvolvido como parte de um desafio proposto pelo Bootcamp **Ciência de dados com Python**, no módulo de introdução do Python. Esse bootcamp faz parte da plataforma **DIO (Digital Innovation One)** em parceria com o iFood.
+Esse projeto foi desenvolvido como parte de um desafio proposto pelo Bootcamp **Ciência de dados com Python**, no módulo de introdução do Python. Esse bootcamp faz parte da plataforma **DIO (Digital Innovation One)** em parceria com o iFood.  
+Decidi utilizar o modelo de orientação a objetos com Java para desenvolver este projeto, com o objetivo de aprimorar minhas habilidades nessa área que possuo conhecimentos.  Embora reconheça que há espaço para melhorias, pretendo deixar as refatorações para o final do bootcamp, quando poderei ajustar o código de acordo com o que aprendi.
 
 # **Enunciado do projeto**
 ## Parte 1
