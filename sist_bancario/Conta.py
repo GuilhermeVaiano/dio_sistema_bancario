@@ -1,3 +1,5 @@
+import random
+
 class Extrato:
     def __init__(self):
         self.transacoes = []
@@ -16,15 +18,33 @@ class Conta:
 
     def __init__(self, usuario):
         Conta.numero_conta += 1
-        self.id = str(Conta.numero_conta).zfill(4)
+        self.id = Conta.numero_conta
         self.usuario = usuario
+        self.agencia = Conta.set_agencia()
         self.saldo = 0
         self.qtd_saques = 3
         self.extrato = Extrato()
         Conta.lista_de_contas.append(self)
 
+##################### GETTERS AND SETTERS #############################
+    def set_agencia():
+        agencia = str(random.radint(1,9999))
+        if len(agencia) < 4:
+            agencia = agencia.zfill(4)
+        return agencia
+
     def get_lista_de_contas():
-        return lista_de_contas
+        return Conta.lista_de_contas
+    
+    def get_contas_por_cpf(cpf):
+        contas_encontradas = []
+        for conta in Conta.lista_de_contas:
+            if conta.usuario.cpf == cpf:
+                contas_encontradas.append(conta)
+        
+        return contas_encontradas
+
+############################## METODOS ################################
 
     def exibe_saldo(self):
         print(f"Saldo disponível: R$ {self.saldo:.2f}")
