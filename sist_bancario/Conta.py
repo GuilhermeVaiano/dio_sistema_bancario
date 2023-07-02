@@ -28,7 +28,7 @@ class Conta:
 
 ##################### GETTERS AND SETTERS #############################
     def set_agencia():
-        agencia = str(random.radint(1,9999))
+        agencia = str(random.randint(1,9999))
         if len(agencia) < 4:
             agencia = agencia.zfill(4)
         return agencia
@@ -86,5 +86,7 @@ class Conta:
             tipo = transacao['tipo']
             valor = transacao['valor']
             print(f"Tipo: {tipo}, Valor: R${valor:.2f}")
+        
+        self.exibe_saldo()
 
     
