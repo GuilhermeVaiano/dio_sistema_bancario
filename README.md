@@ -10,6 +10,10 @@ Fomos contratados por um grande banco para desenvolver o seu novo sistema. Esse 
 Os valores devem ser exibidos utilizando o formato R$ xxx.xx, exemplo:  
 1500.45 = R$ 1500.45  
 
+## Parte 2
+Precisamos otimizar o nosso sistema, criando duas novas funções:  
+* **Criar usuário (cliente):** Um usuário é composto por nome, data de nascimento, cpf e endereço. Deve ser armazenado somente os números do CPF e não podemos cadastrar dois usuários com o mesmo CPF;  
+* **Criar conta corrente:** O programa deve armazenar contas em uma lista, onde uma conta é composta por: agência, número da conta e usuário. O número da conta é sequencial, iniciando em 1. O número da agência é fixo: "0001". Uma conta pertence a somente um usuário. **DICA:** Para vincular um usuário a uma conta, filtre a lista de usuários buscando o número do CPF informado para cada usuário da lista.
 
 # **Status do Projeto**  
 🚧🚧 **Em Desenvolvimento** 🚧🚧  

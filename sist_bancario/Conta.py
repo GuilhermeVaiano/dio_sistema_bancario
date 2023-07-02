@@ -11,11 +11,20 @@ class Extrato:
 
         
 class Conta:
-    def __init__(self, proprietario, saldo):
-        self.proprietario = proprietario
-        self.saldo = saldo
+    numero_conta = 0
+    lista_de_contas = []
+
+    def __init__(self, usuario):
+        Conta.numero_conta += 1
+        self.id = str(Conta.numero_conta).zfill(4)
+        self.usuario = usuario
+        self.saldo = 0
         self.qtd_saques = 3
         self.extrato = Extrato()
+        Conta.lista_de_contas.append(self)
+
+    def get_lista_de_contas():
+        return lista_de_contas
 
     def exibe_saldo(self):
         print(f"Saldo disponível: R$ {self.saldo:.2f}")
